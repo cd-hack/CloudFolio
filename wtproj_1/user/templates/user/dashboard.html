@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="{% static 'user/css/dashboard.css' %}">
+  <!-- poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'user/css/employee.css' %}">
+</head>
+
+<body>
+  <header>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CloudFolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Notifications
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">5 New profiles well match your Organization.</a></li>
+                <li><a class="dropdown-item" href="#">15 are found interested to work for your Firm.</a></li>
+                <li><a class="dropdown-item" href="#">You might find more new talents here.</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bookmarks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+  </header>
+  <main class="container">
+    <!-- main heading  start-->
+    <div class="jumbotron">
+      <h1 class="display-5 m-4" id="main-heading">Popular Portfolios.</h1>
+      <!-- <p class="lead">Here are our popular Portfolios.</p> -->
+      <hr class="my-4">
+    </div>
+    <!-- main heading end -->
+
+
+    <!-- carousel start -->
+    <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="../assets/jett-avatar.jpg" class="d-block w-100" alt="img1" width="50px" height="50px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sample 1</h5>
+           
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../assets/jett-avatar.jpg" class="d-block w-100" alt="img2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sample 2</h5>
+           
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/jett-avatar.jpg" class="d-block w-100" alt="img3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sample 3</h5>
+  
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> -->
+
+    <!-- carousel end -->
+
+    <style>
+      .zoom {
+        transition: transform .2s;
+        cursor: pointer;
+      }
+
+      .zoom:hover {
+        transform: scale(1.2);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+    </style>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card text-white bg-primary mb-3 zoom" style="max-width: 18rem;">
+            <div class="card-header">Top Picks</div>
+            <div class="card-body">
+              <h5 class="card-title">Tech Geeks.</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-white bg-danger mb-3 zoom" style="max-width: 18rem;">
+            <div class="card-header">Top Picks</div>
+            <div class="card-body">
+              <h5 class="card-title">Engineering Brains.</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-white bg-warning mb-3 zoom" style="max-width: 18rem;">
+            <div class="card-header">Top Picks</div>
+            <div class="card-body">
+              <h5 class="card-title">Management Professionals.</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-white bg-success mb-3 zoom" style="max-width: 18rem;">
+            <div class="card-header">Top Picks</div>
+            <div class="card-body">
+              <h5 class="card-title">Creative Minds.</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <h1 class="display-6 m-4" id="main-heading">These portfolios matches your Organisation's vision.</h1>
+      <!-- <p class="lead">Here are our popular Portfolios.</p> -->
+      <hr class="my-4">
+    </div>
+
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Position</th>
+            <th scope="col">Experience (Years)</th>
+            <th scope="col">Profile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="">
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>2</td>
+            <td> <button class=" btn btn-danger">View</button></td>
+          </tr>
+          <tr class="">
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>2</td>
+            <td> <button class=" btn btn-danger">View</button></td>
+          </tr>
+          <tr class="">
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>2</td>
+            <td> <button class=" btn btn-danger">View</button></td>
+          </tr>
+          <tr class="">
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>2</td>
+            <td> <button class=" btn btn-danger">View</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
