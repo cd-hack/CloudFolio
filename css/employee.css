@@ -1,7 +1,7 @@
 
 body{
    
-    background-image:linear-gradient(rgba(241, 106, 16, 0.336),rgba(50, 15, 248, 0.308)), url('../assets/background.jpg');
+    background-image:linear-gradient(rgba(241, 106, 16, 0.336),rgba(50, 15, 248, 0.308));
 }
 
 .filter-section{
@@ -244,3 +244,63 @@ svg {
     display: flex;
 
 }
+
+/* Footer */
+
+.site-footer {
+    color: wheat;
+    background-color: #212529;
+      text-align: center;
+      /* margin: 10px 0; */
+      padding: 10px 0;
+  }
+  
+  #social-wrapper {
+      text-align: center;
+  }
+  
+  /*Social Media Icons*/
+  .social-wrapper {
+      margin: 2rem;
+      text-align: center;
+  }
+  
+  .social-wrapper ul li {
+      display: inline;
+      margin: 0 5px;
+  }
+  
+  .twitter-icon,
+  .facebook-icon,
+  .instagram-icon,
+  .linkedin-icon,
+  .googleplus-icon,
+  .youtube-icon,
+  .foursquare-icon{
+      margin-top: .625em;
+      width: 40px;
+      height: 40px;
+      opacity: .6;
+      filter: alpha(opacity=60); /* For IE8 and earlier */
+    border-radius: 25px;
+  }
+  
+  .twitter-icon:hover,
+  .facebook-icon:hover,
+  .instagram-icon:hover,
+  .linkedin-icon:hover,
+  .googleplus-icon:hover,
+  .youtube-icon:hover,
+  .foursquare-icon:hover {
+      opacity: 1.0;
+      filter: alpha(opacity=100); /* For IE8 and earlier */
+  }
+  
+  .footer-nav p {
+      margin: 2rem;
+      text-align: center;
+  }
+  
+  .card{
+      margin:10px;
+  }
