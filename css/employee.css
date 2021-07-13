@@ -1,0 +1,123 @@
+.navbar {
+    padding: 2.5rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.collapse {
+    padding-top: 2rem;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+#profileContent {
+    position: relative;
+    height: 900px;
+    /* background-color: aqua; */
+}
+
+#cover {
+    height: 14rem;
+    background-color: #12538c;
+}
+
+.profileImage {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 4rem;
+    left: 4rem;
+}
+
+#headerName {
+    display: flex;
+    color: white;
+    padding-top: 10rem;
+    padding-left: 25rem;
+    font-size: 2.5rem;
+}
+
+/* #profileContent{
+    padding: 2rem;
+} */
+
+#additionalDetails {
+    display: flex;
+    padding-left: 24.5rem;
+}
+
+#additionalDetails>div {
+    padding: 0.5rem;
+}
+
+.headingResume {
+    margin-top: 7rem;
+    margin-left: 12rem;
+}
+
+.headingResume1 {
+    margin-top: 3rem;
+    margin-left: 12rem;
+}
+
+.institutionDetails {
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+.editPencil {
+    margin-top: 0.8rem;
+    margin-left: 1.5rem;
+}
+
+svg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.headflex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.share {
+    margin-top: -6px;
+    margin-left: 0.7rem;
+}
+
+#certificateCollection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+}
+
+.certificate>img {
+    width: 425px;
+    height: 330px;
+    padding: 1rem;
+}
+
+#addButton {
+    display: flex;
+    width: 393px;
+    height: 298px;
+    margin: 1rem;
+    padding: 0;
+    background-color: rgb(223, 217, 217);
+    align-items: center;
+    justify-content: center;
+}
+
+#addButton>img {
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+}
