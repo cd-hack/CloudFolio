@@ -1,3 +1,16 @@
+
+body{
+   
+    background-image:linear-gradient(rgba(241, 106, 16, 0.336),rgba(50, 15, 248, 0.308)), url('../assets/background.jpg');
+}
+
+.filter-section{
+    /* max-width: 50%; */
+    
+    margin-left: 10%;
+} 
+
+
 .navbar {
     padding: 2.5rem;
 }
@@ -159,7 +172,7 @@ svg {
 
 .headingProfile {
     padding: 1.5rem;
-    background-image: url('/assets/bg.jpeg');
+    
     color: white;
     height: 34rem;
 }
@@ -225,4 +238,9 @@ svg {
     border-radius: 0.5rem;
     margin-left: 9rem;
     cursor: pointer;
+}
+
+.jobs{
+    display: flex;
+
 }
