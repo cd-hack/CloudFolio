@@ -1,15 +1,12 @@
-
-body{
+/* body{
    
     background-image:linear-gradient(rgba(241, 106, 16, 0.336),rgba(50, 15, 248, 0.308));
-}
+} */
 
-.filter-section{
+.filter-section {
     /* max-width: 50%; */
-    
     margin-left: 10%;
-} 
-
+}
 
 .navbar {
     padding: 2.5rem;
@@ -172,7 +169,7 @@ svg {
 
 .headingProfile {
     padding: 1.5rem;
-    
+    background-image: url(../assets/bg.jpeg);
     color: white;
     height: 34rem;
 }
@@ -185,7 +182,7 @@ svg {
     align-items: center;
 }
 
-.carousel svg{
+.carousel svg {
     color: white;
 }
 
@@ -195,13 +192,13 @@ svg {
     height: 300px;
     overflow: hidden;
     display: flex;
-    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.5) ;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.5);
     background-color: #212529;
     margin-right: 2rem;
     border-radius: 0.5rem;
-
 }
-.carousel-item:hover{
+
+.carousel-item:hover {
     width: 600px;
     height: 360px;
     transition: 0.3s;
@@ -209,7 +206,6 @@ svg {
 
 .carousel-image {
     flex: 6;
-    
 }
 
 .carousel-image img {
@@ -228,7 +224,7 @@ svg {
     justify-content: space-between;
 }
 
-.applyNow{
+.applyNow {
     height: 3rem;
     width: 6rem;
     background-color: blue;
@@ -240,9 +236,20 @@ svg {
     cursor: pointer;
 }
 
-.jobs{
+.jobs {
     display: flex;
+    margin: 2rem;
+}
 
+.jobs .card {
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.5);
+    background-color: #d5d9dd;
+}
+
+.jobs img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Footer */
@@ -250,57 +257,53 @@ svg {
 .site-footer {
     color: wheat;
     background-color: #212529;
-      text-align: center;
-      /* margin: 10px 0; */
-      padding: 10px 0;
-  }
-  
-  #social-wrapper {
-      text-align: center;
-  }
-  
-  /*Social Media Icons*/
-  .social-wrapper {
-      margin: 2rem;
-      text-align: center;
-  }
-  
-  .social-wrapper ul li {
-      display: inline;
-      margin: 0 5px;
-  }
-  
-  .twitter-icon,
-  .facebook-icon,
-  .instagram-icon,
-  .linkedin-icon,
-  .googleplus-icon,
-  .youtube-icon,
-  .foursquare-icon{
-      margin-top: .625em;
-      width: 40px;
-      height: 40px;
-      opacity: .6;
-      filter: alpha(opacity=60); /* For IE8 and earlier */
+    text-align: center;
+    /* margin: 10px 0; */
+    padding: 10px 0;
+}
+
+#social-wrapper {
+    text-align: center;
+}
+
+/*Social Media Icons*/
+
+.social-wrapper {
+    margin: 2rem;
+    text-align: center;
+}
+
+.social-wrapper ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.twitter-icon, .facebook-icon, .instagram-icon, .linkedin-icon, .googleplus-icon, .youtube-icon, .foursquare-icon {
+    margin-top: .625em;
+    width: 40px;
+    height: 40px;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    /* For IE8 and earlier */
     border-radius: 25px;
-  }
-  
-  .twitter-icon:hover,
-  .facebook-icon:hover,
-  .instagram-icon:hover,
-  .linkedin-icon:hover,
-  .googleplus-icon:hover,
-  .youtube-icon:hover,
-  .foursquare-icon:hover {
-      opacity: 1.0;
-      filter: alpha(opacity=100); /* For IE8 and earlier */
-  }
-  
-  .footer-nav p {
-      margin: 2rem;
-      text-align: center;
-  }
-  
-  .card{
-      margin:10px;
-  }
+}
+
+.twitter-icon:hover, .facebook-icon:hover, .instagram-icon:hover, .linkedin-icon:hover, .googleplus-icon:hover, .youtube-icon:hover, .foursquare-icon:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */
+}
+
+.footer-nav p {
+    margin: 2rem;
+    text-align: center;
+}
+
+.card {
+    margin: 10px;
+}
+
+
+.sortbutton{
+    margin: 1rem;
+}
