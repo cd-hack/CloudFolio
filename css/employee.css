@@ -300,3 +300,7 @@ svg {
       margin: 2rem;
       text-align: center;
   }
+  
+  .card{
+      margin:10px;
+  }
