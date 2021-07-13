@@ -2,4 +2,21 @@
     margin: 5px; padding: 5px; box-sizing: border-box;
    } */
 
+   .carousel .carousel-item {
+    height: 500px;
+   
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      
+      min-height: 500px;
+  }
 
+  #main-heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
