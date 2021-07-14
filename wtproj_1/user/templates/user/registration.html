@@ -22,6 +22,15 @@
     </style>
     <link rel="stylesheet" id="" href="{% static 'user/css/style.min.css' %}" type="text/css" media="all">
     <link rel="stylesheet" href="{% static 'user/css/employee.css' %}">
+    <style>
+        /* .form-group{
+          margin: 1rem;
+        } */
+        form{
+            margin: 3rem;
+            margin-left: 10rem;
+        }
+      </style>
 </head>
 <body>
     <header>
@@ -48,7 +57,7 @@
             <form method="POST">
                 {% csrf_token %}
                 <fieldset class="form-group">
-                    <legend class="border-bottom mb-4">Register Here</legend>
+                    <h2 class="border-bottom mb-4">Register Here</h2>
                     {{ form|crispy }}
                 </fieldset>
                 <div class="form-group">
