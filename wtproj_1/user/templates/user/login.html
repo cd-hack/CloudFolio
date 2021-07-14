@@ -2,11 +2,12 @@
 {% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<title>CloudFolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <title>CloudFolio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,24 +24,37 @@
     <link rel="stylesheet" id="" href="{% static 'user/css/style.min.css' %}" type="text/css" media="all">
     <link rel="stylesheet" href="{% static 'user/css/employee.css' %}">
     <style>
-      .form-group{
-          background-color: cornsilk;
-        margin-left: 20rem;
-        margin-right: 20rem;
-        padding: 10px;
-        text-align: center;
-      }
-      button{
-          margin: 5px;
-          padding: 10px;
-          color: black;
-      }
-      form{
-          margin: auto;
-          margin-top: 30px;
-      }
+        .form-group {
+            background-color: cornsilk;
+            margin-left: 20rem;
+            margin-right: 20rem;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            color: black;
+        }
+
+        form {
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        .textinput {
+            height: 3rem;
+            width: 30rem;
+            margin: 1rem;
+        }
+        text-center{
+            text-align: center;
+            margin-left: 100px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -62,22 +76,24 @@
         </nav>
     </header>
     <div class="content-section">
-      <form method="POST">
-          {% csrf_token %}
-          <fieldset class="form-group">
-              <legend class="border-bottom mb-4"><h3>LOGIN</h3> </legend>
-              {{ form|crispy }}
-          </fieldset>
-          <div class="form-group">
-              <button class="btn btn-outline-info" type="submit">Login</button>
-          </div>
-      </form>
-      <div class="border-top pt-3">
-          <small class="text-muted text-center">
-              Need An Account? <a class="ml-2" href="{% url 'registration' %}">Sign Up Now</a>
-          </small>
-      </div>
-  </div>
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">
+                    <h3>LOGIN</h3>
+                </legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Login</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            <small class="text-muted text-center">
+                Need An Account? <a class="ml-2" href="{% url 'registration' %}">Sign Up Now</a>
+            </small>
+        </div>
+    </div>
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="social-wrapper">
             <ul>
@@ -114,4 +130,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
