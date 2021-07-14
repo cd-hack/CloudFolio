@@ -11,7 +11,7 @@ class UserRegisterForm(UserCreationForm):
         fields = ['first_name','last_name','username', 'email', 'password1', 'password2']
 
         widgets = {
-            'first_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'first_name': forms.TextInput(attrs={'class': 'fname'}),
             'last_name': forms.TextInput(attrs={'class': 'lname'}),
             'username': forms.TextInput(attrs={'class': 'username'}),
             'email':forms.TextInput(attrs={'class': 'email'}),
