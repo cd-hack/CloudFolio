@@ -117,10 +117,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Profile</a>
+                            <a class="nav-link" href="{% url 'employeeProfile' %}">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Logout</a>
+                            <a class="nav-link" href="{% url 'login' %}">Logout</a>
                         </li>
 
                     </ul>
@@ -139,7 +139,7 @@
                 <div class="carousel">
                     <div class="carousel-item">
                         <div class="carousel-image">
-                            <img src="../assets/company1.png">
+                            <img src="{% static 'user/assets/company1.png' %}">
                         </div>
                         <div class="employmentDetails">
                             <div class="threedot">
@@ -169,7 +169,7 @@
 
                     <div class="carousel-item">
                         <div class="carousel-image">
-                            <img src="../assets/company2.jpeg">
+                            <img src="{% static 'user/assets/company2.jpeg' %}">
                         </div>
                         <div class="employmentDetails">
                             <div class="threedot">
@@ -198,7 +198,7 @@
 
                     <div class="carousel-item">
                         <div class="carousel-image">
-                            <img src="../assets/company3.png">
+                            <img src="{% static 'user/assets/company3.png' %}">
                         </div>
                         <div class="employmentDetails">
                             <div class="threedot">
@@ -253,7 +253,7 @@
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="../assets/company2.jpeg" class="img-fluid rounded-start" alt="...">
+                    <img src="{% static 'user/assets/company2.jpeg' %}" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -269,7 +269,7 @@
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="../assets/company2.jpeg" class="img-fluid rounded-start" alt="...">
+                    <img src="{% static 'user/assets/company2.jpeg' %}" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -286,7 +286,7 @@
         <div class="card mb-3" style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="../assets/company2.jpeg" class="img-fluid rounded-start" alt="...">
+                    <img src="{% static 'user/assets/company2.jpeg' %}" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">

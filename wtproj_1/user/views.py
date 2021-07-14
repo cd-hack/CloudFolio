@@ -17,8 +17,8 @@ def register(request):
     else:
         form = UserRegisterForm()
     return render(request, 'user/registration.html', {'form': form})
-def login(request):
-    return render(request, 'user/login.html')
+# def login(request):
+#     return render(request, 'user/login.html')
 def dashboard(request):
     return render(request, 'user/dashboard.html')
 def employeeHome(request):

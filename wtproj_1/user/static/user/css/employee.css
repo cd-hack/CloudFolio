@@ -201,7 +201,7 @@ svg {
 .carousel-item:hover {
     width: 600px;
     height: 360px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .carousel-image {
